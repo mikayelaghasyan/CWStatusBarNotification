@@ -208,6 +208,10 @@ typedef NS_ENUM(NSInteger, CWNotificationAnimationType) {
 - (void)displayNotificationWithMessage:(NSString *)message
                            forDuration:(NSTimeInterval)duration;
 
+- (void)displayNotificationWithMessage:(NSString *)message
+                           forDuration:(NSTimeInterval)duration
+                            completion:(void (^)(void))completion;
+
 /**
  * Displays a notification with the indicated attributed string and then 
  * performs the completion block once the notification animates in.
